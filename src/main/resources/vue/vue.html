@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--view层 模板-->
+<div id="app">
+    <span v-bind="message"></span>
+    {{message}}
+</div>
+<!--导入vue.js-->
+<script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        // model层 数据
+        data:{
+            message:"hello,vue!"
+        }
+    })
+</script>
+
+</body>
+</html>
